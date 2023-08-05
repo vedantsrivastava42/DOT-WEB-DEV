@@ -1,0 +1,35 @@
+.box{
+    display: inline-block;
+    border: 1px solid black;
+    width: 150px;
+    height:150px;
+    background-color: aqua;
+}
+
+#box2{
+position: relative;
+left: 610px;
+}
+#box3{
+    position: relative;
+    right:310px;
+    top:300px;
+}
+#box4{
+position: relative;
+left:300px;
+top:300px;
+}
+#box5{
+    position: relative;
+    left:400px;
+}
+
+/* WE can perform same function using transforms 
+#box2{
+    transform: translate(600px,0);
+}
+#box3{
+    transform: translate(-310px,300px);
+}
+*/

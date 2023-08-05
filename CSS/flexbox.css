@@ -1,0 +1,27 @@
+.container{
+
+    height: 500px;
+    border:2px solid green;
+    display: flex;
+   flex-wrap:wrap;
+   /* flex-flow:column-reverse,wrap;
+     align-content: flex-start;
+    align-content: flex-end;*/
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+.box{
+    border:1px solid brown;
+    background-color: aqua;
+    flex-grow: 1;
+}
+#box-1{
+    order:1;
+}
+#box-3{
+    order:4;
+}
+#box-2{
+    order:2;
+}

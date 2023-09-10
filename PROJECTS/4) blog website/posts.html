@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .container{
+    width: 400px;
+    height: 700px;
+    border: 1px solid black;
+    background-color: yellow;
+    display: grid;
+    gap: 4px;
+    grid-template-rows: 30px 1fr 1fr 30px ;
+    grid-template-columns:400px ;
+    
+    grid-template-areas: 
+    "hd"
+    "side"
+    "main"
+    "ft";
+}
+.box{
+    border: 1px solid rgb(128, 0, 0);
+    background-color: aqua;
+    /* height: 100px;
+    width: 100px; */
+   
+}
+#header{/*Grid area -> grid row start/grid column start/grid row end/grid column  end*/
+    grid-area: hd;
+}
+#footer{
+    grid-area: ft;
+}
+#sidebar{
+   grid-area:side;
+}
+#main{
+grid-area: main;
+}
+
+   </style>
+
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="header">HEADER
+        <a href="index.html">CLICK HERE</a>
+    </div>
+    <div class="box" id="sidebar">SIDEBAR</div>
+    <div class="box" id="main">CONTENT</div>
+    <div class="box" id="footer">FOOTER</div>
+    </div>
+</body>
+</html>

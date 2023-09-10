@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: green;
+    border: 3px solid red;
+    display: flex;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    border: 2px solid orange;
+    background-color: aqua;
+    /* transition: 1.5s; */
+    /* transition - property(bg color) , duration for transition , transition func , transition delay */
+    transition: transform 1s ease-in 1s ;
+}
+.box:hover{
+    background-color: brown;
+    /* transform: rotate(45deg);  */
+    /* transform: translateX(50px); */
+    transform: scale(1.2) translateX(500px) rotate(360deg);
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <!-- <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div> -->
+    </div>
+</body>
+</html>

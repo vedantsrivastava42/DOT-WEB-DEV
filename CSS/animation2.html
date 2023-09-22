@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container{
+    height: 215px;
+    width: 100%;
+    background-color: green;
+    border: 1px solid red;
+   
+}
+.box{
+    height: 212px;
+    width: 212px;
+    border: 1px solid orange;
+    background-color: aqua;
+   
+    /* Animation */
+    animation-name: vedant;
+    animation-duration: 3s;
+    animation-iteration-count: 4;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    /* animation-direction: normal; */
+    animation-fill-mode: forwards ; 
+
+}
+/* @keyframes vedant{
+    from{
+        width: 212px;
+    }
+    to{
+        width: 800px;
+    }
+} */
+@keyframes vedant{
+    0%{
+        width:212px;
+        background-color:orange;
+    }
+    50%{
+        width:35%;
+        background-color:white;
+    }
+    100%{
+        width:100%;
+        background-color:green;
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <!-- <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div> -->
+    </div>
+</body>
+</html>

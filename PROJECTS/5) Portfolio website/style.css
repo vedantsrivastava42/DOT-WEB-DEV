@@ -82,13 +82,13 @@ a{
     padding-bottom: 8rem;
 }
 
-.fadedText{
+.heroFadedText{
   position: absolute;
     user-select: none;
     font-size: 7em;
     color: rgb(231, 231, 231);
 
-    bottom: -12%;
+    bottom: -15%;
     left: -5%;
     font-weight: bold;
     transition: all 3s;

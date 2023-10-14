@@ -33,3 +33,24 @@ console.log('Hello');
 //HI
 //Hello
 //123 -> after 5 sec
+
+
+//ASYNC FUNCTION
+async function utility(){
+    
+    let delhiMausam = new Promise((resolve , reject)=> {
+        setTimeout(()=> {
+            resolve("delhi is hot");
+        },10000);
+    });
+
+    let HydMausam = new Promise((resolve , reject)=> {
+        setTimeout(()=> {
+            resolve("delhi is very hot");
+        },20000);
+    });
+
+    let dM =delhiMausam;
+    let hM=HydMausam;
+    return [dM,hM];
+}

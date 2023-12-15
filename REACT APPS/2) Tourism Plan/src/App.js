@@ -10,6 +10,8 @@ const App = () => {
   function removeTour(id) {
     const newTours = tours.filter(tour => tour.id !== id);
     setTours(newTours);
+    //filter function -> jo tour.id given id ke equal nhi hoga usko show krega 
+    //matlab jis tour pe click kro uska id rhega tour.id me aur wo filter out ho jaega
   }
 
   if(tours.length === 0) {

@@ -87,6 +87,7 @@ body{
     background: #b4161b21;
     transition: all 0.5ms;
     color: black;
+    border-radius: 0.5rem;
 }
 
 .btn-red:hover{

@@ -3,7 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { increment, decrement } from "../Redux/Slices/CounterSlice";
 
 const Counter = () => {
+  // kisi slice ki particular value chahiye toh useSelector
   const count = useSelector((state) => state.counter.value);
+  // Createslice me function bna hai lekin agar call krna hai toh useDispatch hook use hoga
   const dispatch = useDispatch();
   return (
     <div className="grid justify-items-center gap-10">

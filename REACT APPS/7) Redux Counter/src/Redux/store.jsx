@@ -6,3 +6,4 @@ export const store = configureStore({
     counter : CounterSlice
   },
 })
+// Store -> multiple slices se bnta hai ek store. uss slice ke reducer ko call krna h.
